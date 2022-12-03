@@ -1,0 +1,76 @@
+body {
+    background-color: bisque;
+    font-family: Tahoma;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+form {
+    height: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20em;
+}
+fieldset {
+    border: none;
+    padding: 2rem;
+    border-bottom: 3px solid grey;
+}
+h1, p {
+    text-align: center;
+}
+p {
+    margin-top: 3px;
+    font-size: 20px;
+}
+label {
+    display: block;
+    font-size: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 20px;
+}
+input, textarea, select {
+    margin: 10px 0 0 0;
+    min-height: 20px;
+    background-color: black;
+    color: #fff;
+}
+.inline {
+    margin: 0 0.2em 0 0;
+    vertical-align: center;
+}
+textarea {
+    width: 20rem;
+    max-width: 100%;
+}
+.bio input {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+#dropdown {
+    display: block;
+    margin-top: 4px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 3em;
+    font-size: 20px;
+    
+}
+input[type="submit"]:hover {
+    background-color: rosybrown;
+    color: #fff;
+
+}
+fieldset:last-of-type {
+    margin-bottom: 20px;
+}
+*::placeholder {
+    color: #fff;
+}
