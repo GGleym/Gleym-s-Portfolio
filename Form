@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">My First Own Form</h1>
+    <p id="description">Thank you for the participation at the survey ;)</p>
+    <!-- Здесь начинается форма -->
+    <form action="gleymivan@icloud.com" method="post" id="survey-form">
+        <!-- Первый блок -->
+        <fieldset class="bio">
+            <label for="name" id="name-label">What is your name?<input type="text" id="name" placeholder="Ivan" required></label>
+            <label for="email" id="email-label">What is your email?<input type="email" id="email" placeholder="Gleym" required></label>
+            <label for="number" id="number-label">How old are you?<input type="number" id="number" placeholder="18" min="10" max="50"></label>
+            <label for="dropdown">Would like to see me doing blog?<select name="choose" id="dropdown">
+                <option value="">(Choose something)</option>
+                <option value="1">Yeees</option>
+                <option value="2">Nope</option>
+            </select></label>
+        </fieldset>
+        <!-- Второй блок -->
+        <fieldset class="radiobuttons">
+            <h2>What types of social networks are you using?</h2>
+            <label for="insta" id="insta-label">
+                <input type="radio" name="radiobut" id="insta" class="inline" value="1">
+                Instagram
+            </label>
+            <label for="vk" id="vk-lable">
+                <input type="radio" name="radiobut" id="vk" class="inline" value="2">
+                VK
+            </label>
+            <label for="telegram" id="telegram-label">
+                <input type="radio" name="radiobut" id="telegram" class="inline" value="3">
+                Telegram
+            </label>
+        </fieldset>
+        <!-- Третий блок -->
+        <fieldset>
+            <h2>Any ideas for my blog-channel on YouTube?</h2>
+            <label for="programming">
+                <input type="checkbox" value="1" id="programming" class="inline">
+                Process of learning JS, HTMl, CSS
+            </label>
+            <label for="aviation">
+                <input type="checkbox" value="2" id="aviation" class="inline">
+                Blogs from the institute
+            </label>
+            <label for="everyday">
+                <input type="checkbox" value="3" id="everyday" class="inline">
+                Everyday Life
+            </label>
+        </fieldset>
+        <!-- Четвертый блок -->
+        <fieldset><textarea name="bio" id="bio" cols="60" rows="10" placeholder="You are free to leave some ideas for my future blog..."></textarea></fieldset>
+        <!-- Пятый блок -->
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
