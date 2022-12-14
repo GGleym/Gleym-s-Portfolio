@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fish list</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Matvey's WISH LIST</h1>
+        <P>THERE IS EVERYTHING YOU WANT</P>
+    </header>
+    <main>
+        <form method="post">
+            <section role="region" aria-labelledby="person-info">
+                <h2 id="person's info">Your info:</h2>
+                <div class="info-1">
+                    <label for="person's name" id="inputs-label">Name:
+                        <input type="text" id="person-name" placeholder="Matvey Karpov">
+                    </label>
+                </div>
+                <div class="info-2">
+                    <label for="" id="inputs-label">Age:
+                        <label for="radio-1">
+                            <input type="radio" name="age-of-person" id="radio-1">
+                            17
+                        </label>
+                        <label for="radio-2">
+                            <input type="radio" name="age-of-person" id="radio-2">
+                            18
+                        </label>
+                        <label for="radio-3">
+                            <input type="radio" name="age-of-person" id="radio-3">
+                            19
+                        </label>
+                    </label>
+                </div>
+            </section>
+            <section class="preferences">
+                <h2>Here is what we can afford:</h2>
+                <div class="prefer">
+                    <ul>
+                        <li>Something self-educational</li>
+                        <li>A case for the Mac</li>
+                        <li>Brand-new Bentley Bentayga</li>
+                    </ul>
+                </div>
+                <div class="pref">
+                    <h3>Is there anything you like?</h3>
+                <label for="radio-btn-1" id="label-btn-1">
+                    <input type="radio" id="radio-btn-1" name="radio-prefer">
+                    OFC YES
+                </label>
+                <label for="radio-btn-2" id="label-btn-2">
+                    <input type="radio" id="radio-btn-2" name="radio-prefer">
+                    OFC NO
+                </label>
+                </div>
+            </section>
+            <section class="own-preferences">
+                <h2>Your preferences:</h2>
+                <p>Okay, Motya, feel free to give some instances of what you would like to get on your Birthday</p>
+                <div class="textarea">
+                    <h3>Here we go:</h3>
+                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="Just start typing :)"></textarea>
+                </div>
+            </section>
+            <input type="submit" id="submit-btn" value="Submit">
+        </form>
+    </main>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
