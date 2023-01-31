@@ -1,0 +1,264 @@
+@media only screen and (max-width: 1000px) {
+    .lg-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+html {
+    font-family: 'SoDo Sans SemiBold', Arial, Helvetica, sans-serif
+}
+
+/* Сделай так, чтобы тень сверху была */
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    -webkit-box-shadow: 0px -1px 15px -1px rgba(98,0,19,0.83); 
+    box-shadow: 0px -1px 15px -1px rgba(98,0,19,0.83);
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0 5rem;
+    z-index: 3;
+    position: sticky
+}
+
+.left-header {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.left-header svg {
+    width: 50px;
+    margin-right: 2rem;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.right-header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+.right-header p {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+#button-white,
+#button-black {
+    border: 1px solid #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+#button-white {
+    color: #000;
+}
+
+#button-black {
+    color: #fff;
+    background-color: #000;
+}
+
+.first-product-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#announcement-section {
+    background-color: #d4e9e2;
+    color: #1e3932;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#announcement-section h3 {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#announcement-section p {
+    font-size: 1.5rem;
+}
+
+#announcement-section span {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#first-product-div {
+    display: flex;
+    color: #1e3932;
+    flex-direction: row;
+}
+
+#text-div {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#text-div h3 {
+    margin-bottom: 1rem;
+}
+
+#text-div p {
+    font-size: 1.5rem;
+}
+
+#text-div a {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: #1e3932;
+}
+
+#text-p {
+    width: 50%;
+}
+
+img {
+    max-width: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-div {
+    height: 7rem;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 1.4rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    -webkit-box-shadow: 0px -1px 15px -1px rgba(98,0,19,0.83); 
+    box-shadow: 0px -1px 15px -1px rgba(98,0,19,0.83);
+}
+
+.lg-flex {
+    display: flex;
+    justify-content: left;
+    gap: 7rem;
+    font-size: 7rem;
+}
+
+.divider-links::before {
+    content: '';
+    border: 1px solid #000;
+    opacity: 0.2;
+}
+
+.divider-links {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+
+.footer-content h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+ul > * {
+    color: rgb(0, 0, 0, 0.58);
+    padding: 1rem 0;
+}
+
+hr {
+    border: 0;
+    margin: 0;
+
+}
+
+.links-lists {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.links-lists a {
+    display: inline-block;
+    position: relative;
+    transition: all ease-out 0.2s;
+}
+
+.links-div {
+    margin-left: -0.5rem;
+}
+
+.divider-links::before {
+    content: '';
+    display: block;
+    background-color: #000;
+}
+
+.absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.links-lists a:hover {
+    background: #fff;
+    opacity: 0.9;
+}
+
+.links-lists a:active {
+    transform: scale(0.95);
+}
+
+.sb-iconButton::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: -9%;
+    top: -6%;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .2s ease-in;
+    transform: scale(.4)
+}
+
+.sb-iconButton:hover::before {
+    transform: scale(1);
+}
